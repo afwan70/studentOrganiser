@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amirafwan.student_organizer_v1.appView.subjectItem.note.EditNoteActivity">
+
+    <EditText
+        android:id="@+id/etNoteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note Name"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etNoteDescription"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/etNoteName"
+        android:inputType="text|textMultiLine"
+        android:gravity="top"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Note Description Text Here"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/btnUpdateNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Note"
+        android:layout_below="@+id/etNoteDescription"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amirafwan.student_organizer_v1.appView.subjectItem.audio.AddAudioActivity">
+
+    <EditText
+        android:id="@+id/etAudioName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:hint="Put file name first!"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnRecordAddAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap And Hold to Record!!"
+        android:layout_below="@+id/etAudioName"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"/>
+
+    <TextView
+        android:id="@+id/tvRecordLabel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Tap And Hold Button to Start Record!!"
+        android:layout_below="@+id/btnRecordAddAudio"
+        android:gravity="center|center_vertical"
+        />
+
+
+</RelativeLayout>

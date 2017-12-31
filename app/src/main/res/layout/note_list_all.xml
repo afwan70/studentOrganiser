@@ -1,0 +1,48 @@
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:elevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNoteName"
+            android:text="Note Name"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tvNoteId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvNoteName"
+            android:layout_alignBottom="@+id/tvNoteName"
+            android:layout_alignEnd="@+id/tvClickDelete"
+            android:layout_alignRight="@+id/tvClickDelete"
+            android:text="id.." />
+
+
+        <TextView
+            android:id="@+id/tvClickDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvNoteName"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="6dp"
+            android:text="Click to delete"
+            android:textSize="14dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

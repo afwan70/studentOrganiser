@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amirafwan.student_organizer_v1.appView.assignment.EditAssignmentActivity">
+
+    <EditText
+        android:id="@+id/etAssignmentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Assignment Name"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etAssignmentDescription"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/etAssignmentName"
+        android:inputType="text|textMultiLine"
+        android:gravity="top"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Assignment Description"
+        android:singleLine="false" />
+
+    <EditText
+        android:id="@+id/etAssignmentDateDue"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAssignmentDescription"
+        android:hint="Choose Date"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/ivEditAssignmentDatePicker"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/etAssignmentDateDue"
+        android:layout_toEndOf="@+id/etAssignmentDateDue"
+        android:layout_toRightOf="@+id/etAssignmentDateDue"
+        app:srcCompat="@drawable/calendar3" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Assignment"
+        android:layout_below="@+id/etAssignmentDateDue"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

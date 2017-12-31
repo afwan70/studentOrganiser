@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AmirCourseApp_v1</string>
+
+    <string-array name="ItemChoose">
+        <item>Notes</item>
+        <item>Images</item>
+        <item>Audios</item>
+    </string-array>
+
+    <string-array name="MainChoose_Name">
+        <item>Assignment</item>
+        <item>Subject</item>
+    </string-array>
+
+    <string-array name="MainChoose_Description">
+        <item>Put your assignments here and let the app remind you.</item>
+        <item>Arrange your subjects with the smarter way.</item>
+    </string-array>
+
+</resources>
